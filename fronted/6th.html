@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Crop Advisory</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8fdf8;
+      color: #333;
+    }
+
+    /* Header */
+    .header {
+      background: linear-gradient(rgba(0, 100, 0, 0.7), rgba(0, 100, 0, 0.7)), url("https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1600&q=80");
+      background-size: cover;
+      padding: 20px;
+      color: white;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    .header p {
+      margin: 5px 0;
+    }
+
+    /* Card style */
+    .card {
+      background: white;
+      border-radius: 8px;
+      padding: 15px;
+      margin: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .card h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    /* Weather */
+    .weather {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .forecast {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+    .forecast div {
+      flex: 1;
+      text-align: center;
+      padding: 10px;
+      background: #f4f9ff;
+      margin: 5px;
+      border-radius: 6px;
+    }
+
+    /* Quick actions */
+    .quick-actions {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+    .quick-actions button {
+      padding: 15px;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+      background: #f1f5f1;
+      cursor: pointer;
+    }
+    .quick-actions button:hover {
+      background: #e0f2e0;
+    }
+
+    /* Crop status */
+    .status {
+      background: #f1fdf1;
+      border-left: 5px solid green;
+      padding: 10px;
+      border-radius: 6px;
+      margin-top: 10px;
+    }
+
+    /* Recommendations */
+    .recommendation {
+      background: #f8fcff;
+      border-left: 5px solid #2196f3;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 6px;
+    }
+
+    /* Bottom nav */
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: white;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+      border-top: 1px solid #ddd;
+    }
+    .bottom-nav a {
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Smart Crop Advisory</h1>
+    <p>स्मार्ट खेती, बेहतर फसल</p>
+    <p>Good morning, रामू जी</p>
+  </div>
+
+  <div class="card">
+    <h2>🌤 Weather Forecast</h2>
+    <div class="weather">
+      <div>
+        <h3>28°C</h3>
+        <p>Partly Cloudy<br>Pune, Maharashtra</p>
+      </div>
+      <div>
+        <p>💧 Humidity: 65%</p>
+        <p>🌬 Wind: 12 km/h</p>
+        <p>🌧 Rain: 20%</p>
+      </div>
+      <div>
+        <span style="color: green; font-weight: bold;">Good for farming</span>
+      </div>
+    </div>
+    <h3>3-Day Forecast</h3>
+    <div class="forecast">
+      <div>Tomorrow<br>30°/22°</div>
+      <div>Day 3<br>26°/20°</div>
+      <div>Day 4<br>27°/21°</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>⚡ Quick Actions</h2>
+    <div class="quick-actions">
+      <button>🌱 Crop Advice</button>
+      <button>🧪 Soil Test</button>
+      <button>💬 Ask Expert</button>
+      <button>🔔 Alerts</button>
+    </div>
+    <div class="status">
+      <p><strong>🌾 Current Crop:</strong> धान (Rice)</p>
+      <p>Growth Stage: Flowering</p>
+      <p>Days to Harvest: 45 days</p>
+      <p>Expected Yield: Good 👍</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>📢 Today's Recommendations</h2>
+    <div class="recommendation">
+      <strong>💧 Irrigation Alert</strong>
+      <p>Water your rice field today. Soil moisture is optimal.</p>
+    </div>
+    <div class="recommendation" style="border-left-color: orange;">
+      <strong>🌱 Fertilizer Due</strong>
+      <p>Apply nitrogen-based fertilizer within the next 2 days.</p>
+    </div>
+  </div>
+
+  <div class="bottom-nav">
+    <a href="#">📊 Home</a>
+    <a href="#">🌱 Crops</a>
+    <a href="#">❓ Help</a>
+    <a href="#">🔔 Alerts</a>
+  </div>
+
+</body>
+</html>
